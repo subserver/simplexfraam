@@ -1,0 +1,3 @@
+#!/bin/bash
+scriptDir="${0%/*}"
+php "$scriptDir"/console/cli.php "$@" && exit;

@@ -1,0 +1,9 @@
+{
+  "error":{
+    "message":{
+      "404": "We can't find the content you're looking for",
+      "500": "Looks like something went wrong on our end",
+      "403": "You do not have permission to do that"
+    }
+  }
+}
