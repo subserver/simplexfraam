@@ -1,0 +1,21 @@
+{
+  "db": {
+    "host": "host",
+    "name": "name",
+    "user": "user",
+    "pass": "pass",
+    "charset": "utf8mb4"
+  },
+  "debug" : true,
+  "site": {
+    "name": "SimplexFraam",
+    "meta": {
+      "description": "",
+      "keywords": "",
+      "author": ""
+    }
+  },
+  "date": {
+    "format": "d F Y"
+  }
+}
