@@ -3,7 +3,10 @@
 use SimplexFraam\Router;
 
 //Users Group
-Router::map("GET", "/", "UserController::all", "home");
+Router::map("GET", "/", "UserController::all", "home")
+    ->before("AttachMiddleware", ["result" => "before value"])
+    ->enforce("EnforableMiddleware", [true])
+    ->after("AttachMiddleware", ["after" => "after value"]);
 
 Router::map("GET", "/users", "UserController::all", "user_all");
 Router::map("POST", "/users", "UserController::create", "user_new");
