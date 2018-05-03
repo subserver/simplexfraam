@@ -9,7 +9,7 @@
         }
     ],
     "autoload": {
-        "classmap": ["src/", "console/command/"]
+        "classmap": ["src/", "console/command/", "app/controller/", "app/model/"]
     },
     "require": {
         "morris/lessql": "^0.3.5",

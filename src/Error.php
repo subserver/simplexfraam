@@ -8,7 +8,7 @@
 class Error
 {
     use MagicCollector;
-    protected $responeCode, $errorMessage;
+    public $responeCode, $errorMessage;
 
     public function __construct($responseCode = 500, $errorMessage = "")
     {
