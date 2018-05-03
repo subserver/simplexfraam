@@ -13,7 +13,12 @@ class UserController
 
     public static function get(Request &$req, Response &$res){
         $res->template("home/home");
-        $res->error(new Error(404, "User with id `" . $req->get("id") . "` not found"))->send();
+        $res
+            ->error(new Error(
+                404,
+                "User with id `" . $req->get("id") . "` not found"
+            ))
+            ->send();
         return User::find($req->get("id"));
     }
 }

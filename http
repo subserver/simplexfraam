@@ -1,0 +1,3 @@
+#!/bin/bash
+scriptDir="${0%/*}"
+php "$scriptDir"/public/index.php "$@" && exit;

@@ -1,4 +1,4 @@
-<?php
+<?php namespace PaceMark\LMS;
 
 use SimplexFraam\Router;
 
