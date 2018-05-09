@@ -2,14 +2,14 @@
 
 
 namespace PaceMark\LMS;
-
+use SimplexFraam\DB;
 
 class User
 {
     public $id, $name, $username, $email;
     public static function all()
     {
-        return [new User()];
+        return DB::getInstance()->user()->fetchAll();
     }
 
     public static function find($id){

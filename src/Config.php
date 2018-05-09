@@ -83,4 +83,11 @@ class Config
     public static function save(){
         file_put_contents(self::$userConfig, json_encode(self::$config, JSON_PRETTY_PRINT));
     }
+
+    public static function loadConfigFile($path, $override = false){
+        if(!self::$config){
+            self::load();
+        }
+        self::$config->load($path, $override);
+    }
 }
