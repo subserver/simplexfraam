@@ -1,6 +1,8 @@
 # simplexfraam
 Basic collection of libraries to make a base for developing web applications in PHP.
 
+### Note, this is a work in progress. It is not in a stable state yet.
+
 #### Goals  
 * Unified starting template.
 * Easy DB ORM intergration
